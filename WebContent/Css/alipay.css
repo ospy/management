@@ -1,0 +1,172 @@
+﻿@charset "utf-8"; 
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre, 
+dl, dt, dd, ul, ol, li, th, td, div, span, img, 
+fieldset, lengend, button, input, select, textarea{margin: 0;padding: 0;} 
+/* color & background */ 
+html{color:#000; background:#FFF;} 
+/* font */ 
+body, button, input, select, textarea { /* for ie */ 
+font: 12px/18px Arial, Verdana, Microsoft YaHei; 
+} 
+/* fix center */ 
+html,body {height: 100%;margin: 0 auto;} 
+/* h1~h6 */ 
+h1 {font-size: 18px;} 
+h2 {font-size: 16px;} 
+h3 {font-size: 14px;line-height:30px;} 
+h4, h5, h6 {font-size: 100%;} 
+/* a */ 
+a { text-decoration: none; } 
+a:hover { text-decoration: underline; } 
+/* list */ 
+ul,ol {list-style: none;} 
+/* img border */ 
+fieldset,img{border: 0} 
+/* table */ 
+table {border-collapse: collapse;border-spacing: 0;font:inherit;} 
+/* margin */ 
+.alpha {margin-left: 0;} 
+.omega {margin-right: 0;} 
+/* float & clear */ 
+.left{float:left;} 
+.right{float:right;} 
+.clear {clear: both;display: block;} 
+/* clearfix */ 
+.clearfix:after{content:".";display:block;} 
+.clearfix{display:inline-table;} 
+/* Hides from IE-mac */ 
+* html .clearfix{height:1%;} 
+.clearfix{display:block;} 
+/* End hide from IE-mac */ 
+*+html .clearfix{min-height:1%;}/* IE7 */ 
+
+.main {
+    width:1200px;
+    margin:20px auto;
+    height:auto;
+    overflow:hidden;
+  
+}
+.mainbox {
+    margin:0 auto;
+    width:980px;
+    padding:0;
+}
+    .mainbox .tab_navi {
+        z-index:999;
+        margin:0;
+        padding:0;
+        margin-top:-1px;
+    }
+
+    .mainbox .tab_navi li {
+        list-style:none;
+        float:left;
+        width:120px;
+        height:40px;
+        line-height:40px;
+        background:#ccc;
+        color:#fff;
+        font:bold 14px/40px  "Microsoft YaHei";
+        text-align:center;
+    }
+.mainbox .tab_navi li a:hover{
+text-decoration:none;
+    }
+#menu0 {
+    background:#165c47;
+}
+
+#menu1 {
+    margin-left:10px;
+}
+ .mainbox .tab_navi li:hover {
+     cursor:pointer;
+        }
+.paypanel {
+    clear:both;
+    display:none;
+    overflow: hidden;
+    border:1px solid #165c47;
+    padding:20px;
+    height:auto;
+    background:#f9f9f9;
+}
+#paypanel-0{
+    display:block;
+}
+.paypanel .content_left {
+    float: left;
+    width: 580px;
+}
+.paypanel .content_left ul li {
+    padding-left:12px;
+    font:normal 14px/22px "Microsoft YaHei";
+}
+.paypanel .content_left ul li a{
+    font-size:14px;
+    color:#165c47;
+}
+.paypanel .content_right_pc {
+    border: medium none;
+    float: left;
+    margin-left: 10px;
+    text-align:center;
+}
+.content_right_m {
+    text-align:center;
+}
+.paypanel .content_right_pc img,.paypanel .content_right_m img{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+   
+}
+.condition li{
+    text-indent:2em;
+}
+.demobox {
+    margin-top:10px;
+    border-top:1px solid #eee;
+}
+.demobox h1{
+    color:#648a25;
+    font:bold 20px/40px "Microsoft YaHei";
+    text-align:center;
+}
+
+.demo {
+     margin:10px auto;
+     text-align:center;
+}
+.demo h3{
+    font-size:18px;
+    margin-top:20px;
+    color:#648a25;
+    line-height:50px;
+    text-align:left;
+    border-top:1px solid #eee;
+}
+.demo img,.errordemo img{
+    width:360px;
+    height:auto;
+}
+.errordemo {
+    border-top:2px solid #ccc;
+    text-align:center;
+}
+.errordemo h1{
+    color:#cc3300;
+    font:normal 20px/40px "Microsoft YaHei";
+    text-align:center;
+}
+.errordemo h3{
+     line-height:50px;
+    border-top:1px solid #eee;
+    text-align:left;
+    color:#cc3300;
+}
+.web img{
+    width:680px;
+    height:auto;
+}

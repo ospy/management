@@ -1,0 +1,104 @@
+﻿.listtable {
+    float: left;
+    margin-bottom:20px;
+    padding: 20px 10px;
+    text-align: center;
+    width: 210px;
+    height:210px;
+}
+.part .big{ background:url(/images/icons/bg05.png) 0 8px no-repeat;}
+.pic {
+    background: rgba(0, 0, 0, 0) url("/images/loading.gif") no-repeat scroll center center;
+    border: 1px solid #dfdede;
+    display: inline-block;
+    height: 150px;
+   
+    overflow: hidden;
+    text-decoration: none;
+    width: 150px;
+}
+.listtable .datail {
+    display:none;
+}
+.listtable .others {
+display:none;
+}
+.listtable .star {
+    display:none;
+}
+.listtable .starpic {
+    display: inline-block;
+}
+.listtable .starpic img {
+    vertical-align: text-bottom;
+}
+.listtable .Secondtd {
+    padding: 10px;
+}
+.listtable .lasttd {
+    padding-bottom: 5px;
+}
+.listtable .firsttd{
+    float: none;
+    line-height: 22px;
+    margin-left: 28px;
+    text-align: left;
+    min-height:48px;
+    width: 180px;
+   
+   
+}
+    .listtable .firsttd a {
+         font: bold 14px/22px "微软雅黑";
+    }
+.price {
+    
+}
+.listtime {
+    display:none;
+}
+.abstract {
+    line-height: 20px;
+}
+.highlight {
+    color: #cc3300;
+}
+
+.preview {
+    background: transparent url("../images/class.png") no-repeat scroll 0 -618px;
+    display: inline-block;
+    float: left;
+    height: 24px;
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 30px;
+}
+.preview:hover {
+    cursor: pointer;
+}
+.property {
+    left: 10px;
+    line-height: 24px;
+    position: absolute;
+}
+.property span {
+    display: inline-block;
+    float: left;
+    height: 24px;
+    margin-left: 0;
+    margin-top: 2px;
+    width: 24px;
+}
+.createTime {
+    display: none;
+}
+span.activeImage {
+    background: rgba(0, 0, 0, 0) url("/images/icons/discount40.png") no-repeat scroll 0 0;
+    height: 40px;
+    left: 122px;
+    position: absolute;
+    right: auto;
+    top: 3px;
+    width: 40px;
+    z-index: 10;
+}

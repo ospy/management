@@ -1,0 +1,48 @@
+.Newsbox {
+    margin:20px auto;
+    width:1200px;
+    border-radius:6px;
+    min-height:300px;
+}
+.Newsbox h1{
+    
+    
+    font:bold 24px/40px "Microsoft YaHei";
+    border-bottom:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+.NewsContent {
+    min-height:160px;
+    margin:0 auto;
+    padding:10px;
+    background:#f6f6f6;
+}
+.Newsbox p {
+       
+        text-indent:2em;
+        margin:20px auto;
+        width:90%;
+        line-height:22px;
+        font-size:14px;
+    }
+.Newsfoot {
+    margin:0 auto;
+    padding:10px;
+    text-indent:3em;
+    background:#f6f6f6;
+}
+.back {
+    margin:10px auto;
+    padding:5px;
+    width:96%;
+}
+#newsdetail{
+    width:960px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    
+}
+#newsdetail .newtitle{
+    line-height: 40px;
+}

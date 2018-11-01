@@ -1,0 +1,280 @@
+package com.ebook.member.dao;
+
+import java.awt.ActiveEvent;
+import java.awt.Menu;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.sound.midi.MetaEventListener;
+
+import com.ebook.entity.Activate;
+import com.ebook.entity.Member;
+import com.ebook.entity.MemberInfo;
+import com.ebook.utils.DBPool;
+import com.ebook.utils.DatabaseTools;
+
+public class MemberDao {
+	
+	/**
+	 * 登录验证
+	 * @param uid
+	 * @return
+	 */
+	public static int userLogin(String uid,String pwd){
+		Member member = new Member();
+		String sql = "select * from cc_member where s_loginid='"+uid+"' and s_password ='"+pwd+"'";
+		Connection conn = DBPool.getInstance().getConnection();
+		Statement stmt;
+		ResultSet rs = null;
+		try {
+			stmt = conn.createStatement();
+			 rs = stmt.executeQuery(sql);
+			 if(rs.next()){
+				 member.setUid(rs.getString("i_uid"));
+				 member.setEmail(rs.getString("s_mail"));
+				 member.setLoginid(rs.getString("s_loginid"));
+				 member.setPassword(rs.getString("s_password"));
+				 member.setState(rs.getInt("i_state"));
+				 member.setOnline(rs.getInt("i_online"));
+			 }else{
+				 return 0;
+			 }
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return 1;
+	}
+	
+
+	/**
+	 * 根据uid查找Member
+	 * @param uid
+	 * @return
+	 */
+		public static Member findMemberByID(String uid){
+			Member member = new Member();
+			String sql = "select * from cc_member where i_uid='"+uid+"'";
+			Connection conn = DBPool.getInstance().getConnection();
+			Statement stmt;
+			ResultSet rs = null;
+			try {
+				stmt = conn.createStatement();
+				 rs = stmt.executeQuery(sql);
+				 if(rs.next()){
+					 member.setUid(rs.getString("i_uid"));
+					 member.setEmail(rs.getString("s_mail"));
+					 member.setLoginid(rs.getString("s_loginid"));
+					 member.setPassword(rs.getString("s_password"));
+					 member.setState(rs.getInt("i_state"));
+					 member.setOnline(rs.getInt("i_online"));
+				 }else{
+					 return null;
+				 }
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			return member;
+		}
+	
+		/**
+		 * 根据email查找Member
+		 * @param email
+		 * @return
+		 */
+	public static Member findMemberByEmail(String email){
+		Member member = new Member();
+		String sql = "select * from cc_member where s_mail='"+email+"'";
+		Connection conn = DBPool.getInstance().getConnection();
+		Statement stmt;
+		ResultSet rs = null;
+		try {
+			stmt = conn.createStatement();
+			 rs = stmt.executeQuery(sql);
+			 rs.next();
+			 member.setUid(rs.getString("i_uid"));
+			 member.setEmail(rs.getString("s_mail"));
+			 member.setLoginid(rs.getString("s_loginid"));
+			 member.setPassword(rs.getString("s_password"));
+			 member.setState(rs.getInt("i_state"));
+			 member.setOnline(rs.getInt("i_online"));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return member;
+	}
+	
+	/**
+	 * 更新Member
+	 * @param member
+	 */
+	public static void updateMember(Member member){
+		String sql = "update cc_member set s_mail=?,s_password=?,i_state=?,i_online=? where i_uid=?";
+		Connection conn = DBPool.getInstance().getConnection();
+		PreparedStatement ptst = null;
+		try {
+			ptst = conn.prepareStatement(sql);
+			ptst.setString(1, member.getEmail());
+			ptst.setString(2, member.getPassword());
+			ptst.setInt(3, member.getState());
+			ptst.setInt(4, member.getOnline());
+			ptst.setString(5, member.getUid());
+			ptst.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally{
+			DatabaseTools.closeStatement(ptst);
+			DatabaseTools.closeConnection(conn);
+		}
+	}
+	
+	
+	
+	/**
+	 * 根据email查找Active
+	 * @param email
+	 * @return
+	 */
+	public static Activate findActiveByEmail(String email){
+		Activate activate = new Activate();
+		String sql = "select * from cc_activate where s_mail='"+email+"' order by i_id desc";
+		Connection conn = DBPool.getInstance().getConnection();
+		Statement stmt;
+		ResultSet rs = null;
+		try {
+			stmt = conn.createStatement();
+			 rs = stmt.executeQuery(sql);
+			 rs.next();
+			 activate.setId(rs.getLong("i_id"));
+			 activate.setCreateTime(rs.getString("s_create_time"));
+			 activate.setCode(rs.getString("s_act_code"));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return activate;
+	}
+	
+	
+	/**
+	 * 根据uid查找Active
+	 * @param uid
+	 * @return
+	 */
+		public static Activate findActiveByUid(String uid){
+			Activate activate = new Activate();
+			String sql = "select * from cc_activate where i_uid='"+uid+"' order by i_id desc";
+			Connection conn = DBPool.getInstance().getConnection();
+			Statement stmt;
+			ResultSet rs = null;
+			try {
+				stmt = conn.createStatement();
+				 rs = stmt.executeQuery(sql);
+				 rs.next();
+				 activate.setId(rs.getLong("i_id"));
+				 activate.setCreateTime(rs.getString("s_create_time"));
+				 activate.setCode(rs.getString("s_act_code"));
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			return activate;
+		}
+		
+		/**
+		 * 根据SQL查找Active
+		 * @param uid
+		 * @return
+		 */
+		public static Activate findActiveBySQL(String sql){
+			Activate activate = new Activate();
+			Connection conn = DBPool.getInstance().getConnection();
+			Statement stmt;
+			ResultSet rs = null;
+			try {
+				stmt = conn.createStatement();
+				 rs = stmt.executeQuery(sql);
+				 rs.next();
+				 activate.setId(rs.getLong("i_id"));
+				 activate.setCreateTime(rs.getString("s_create_time"));
+				 activate.setCode(rs.getString("s_act_code"));
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			return activate;
+		}
+		
+		/**
+		 * 保存activate
+		 * @param activate
+		 */
+		public static void saveActivate(Activate activate){
+			Member member = activate.getMember();
+			String sql = "insert into cc_activate(i_uid,s_loginid,s_act_code,s_create_time,s_type,"
+					+ "s_name,s_dest,b_overdue,b_send,b_deleted) values(?,?,?,?,?,?,?,?,?,?)";
+			Connection conn = DBPool.getInstance().getConnection();
+			PreparedStatement ptst = null;
+			try {
+				ptst = conn.prepareStatement(sql);
+				ptst.setString(1, member.getUid());
+				ptst.setString(2, member.getLoginid());
+				ptst.setString(3, activate.getCode());
+				ptst.setString(4, activate.getCreateTime());
+				ptst.setString(5, activate.getStype());
+				ptst.setString(6, activate.getSname());
+				ptst.setString(7, activate.getSdest());
+				ptst.setInt(8, activate.getBoverdue());
+				ptst.setInt(9, activate.getBsend());
+				ptst.setInt(10, activate.getBdeleted());
+				ptst.executeUpdate();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}finally{
+				DatabaseTools.closeStatement(ptst);
+				DatabaseTools.closeConnection(conn);
+			}
+			
+		}
+		
+		
+		/**
+		 * 保存MemberInfo
+		 * @param MemberInfo
+		 */
+		public static void saveMemberInfo(MemberInfo memberInfo){
+			Member member = memberInfo.getMember();
+			String sql = "insert into cc_member_info(i_uid,s_occupation,s_name,s_mobile,s_address,"
+<<<<<<< HEAD
+					+ "s_capacity,s_education,s_create_time) values(?,?,?,?,?,?,?,?)";
+=======
+					+ "s_capacity,s_spec,s_education,s_create_time) values(?,?,?,?,?,?,?,?,?)";
+>>>>>>> 77330f0df277e9309e9aed9c44487a5aae6900b1
+			Connection conn = DBPool.getInstance().getConnection();
+			PreparedStatement ptst = null;
+			try {
+				ptst = conn.prepareStatement(sql);
+				ptst.setString(1, member.getUid());
+				ptst.setString(2, memberInfo.getOccupation());
+				ptst.setString(3, memberInfo.getName());
+				ptst.setString(4, memberInfo.getMobile());
+				ptst.setString(5, memberInfo.getAddress());
+				ptst.setString(6, memberInfo.getCapacity());
+<<<<<<< HEAD
+				ptst.setString(7, memberInfo.getEducation());
+				ptst.setString(8, memberInfo.getCreatetime());
+=======
+				ptst.setString(7, memberInfo.getSpeciality());
+				ptst.setString(8, memberInfo.getEducation());
+				ptst.setString(9, memberInfo.getCreatetime());
+>>>>>>> 77330f0df277e9309e9aed9c44487a5aae6900b1
+				ptst.executeUpdate();
+				
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}finally{
+				DatabaseTools.closeStatement(ptst);
+				DatabaseTools.closeConnection(conn);
+			}
+			
+		}
+}

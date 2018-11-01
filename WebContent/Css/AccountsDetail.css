@@ -1,0 +1,26 @@
+﻿
+
+#txtZhiPoint {width:36px;text-align:center;
+}
+
+#txtExpValue {clear:both;width:60px;border:none;box-shadow: none;text-align:center;font-weight:bold;text-align:center;
+}
+
+.summary {height:60px;border:1px solid #ccc;margin-bottom:10px;padding:10px;
+}
+.zhidian {float:left;width:180px;height:40px;
+}
+.goldcoin {float:left;border-left:1px solid #eee;padding-left:20px;
+}
+.summary h3{    float: left;
+    line-height: 40px;
+    padding: 10px;
+
+}
+/************ 账务明细 ************/
+#lblExpAmount { width:150px;float:left;}
+.exchange {float:left;height:40px;line-height:60px;
+}
+.exchange b { font-size:12px;
+              color:#999;
+    }

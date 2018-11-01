@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+
+.limit{
+    font-size: 13px;width: 98%;margin: 0 auto;}
+.control-group {
+    display: inline-block;
+    margin-left: 12px;
+}
+.hasDatepicker {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    height: 28px;
+    padding-left: 12px;
+    width: 100px;
+}
+.level input[type="text"] {
+    border-radius: 4px;
+    height: 30px;
+}
+.orderbox select,.orderbox input{
+       border: 1px solid #eee;
+    border-radius: 3px;
+    height: 28px;
+    padding-left: 12px;    
+}
+.orderbox input{
+    border-radius: 3px 0 0 3px;
+}
+
+#keys{
+    line-height: 18px;
+    width: 160px;
+    padding-left: 12px;
+    border: 1px solid #95b8e7;
+    }
+#searchbtn{ 
+    border: 1px solid #95b8e7;
+    border-radius: 0 3px 3px 0;
+    height: 28px;
+    vertical-align: middle;
+    font-size: 13px;
+    padding: 0 5px;}
+.userlist{
+    width: 100%;}
+.userlist span{
+    display: block;
+    height: 30px;}
+.first th{}
+.name{width: 10%;}
+.tel{width: 10%;}
+.email{width: 15%;}
+.addr{width: 20%;}
+.capa{width: 8%;}
+.userspec{width: 8%;}
+.edu{width: 4%;}
+.regtime{width: 15%;}
+.comptime{width: 15%;}

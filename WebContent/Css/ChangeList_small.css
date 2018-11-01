@@ -1,0 +1,120 @@
+﻿.listtable {
+    border-bottom: 1px solid #ddd;
+    clear: both;
+    color: #666;
+    padding: 20px 10px;
+    position: relative;
+   width:900px;
+}
+.part .small{ background:url(/images/icons/bg06.png) 0 8px no-repeat; }
+
+.listtable p {
+    margin-left: 172px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    line-height:22px;
+}
+.listtable::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.listtable .firsttd {
+    line-height: 30px;
+    margin-left: 162px;
+    margin-top: -5px;
+    overflow: hidden;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size:14px;
+}
+.listtable .datail {
+    display:none;
+    padding: 10px 0;
+}
+.listtable .others .subtitle{
+    display:inline-block;
+    width:160px;
+
+    
+}
+.listtable .star {
+    color: #666666;
+}
+.listtable .starpic {
+    display: inline-block;
+}
+.listtable .starpic img {
+    vertical-align: text-bottom;
+}
+.listtable .Secondtd {
+    padding: 10px;
+}
+.listtable .lasttd {
+    padding-bottom: 5px;
+}
+.listtable .firsttd .title {
+    float: left;
+    font: bold 15px/24px "微软雅黑";
+}
+.listtime {
+    float: left;
+    line-height: 28px;
+    margin-left: 5px;
+}
+.abstract {
+    line-height: 20px;
+}
+.highlight {
+    color: #cc3300;
+}
+.pic {
+    background: rgba(0, 0, 0, 0) url("/images/loading.gif") no-repeat scroll center center;
+    border: 1px solid #dfdede;
+    float: left;
+    height: 150px;
+    margin-right: 10px;
+    text-decoration: none;
+    width: 150px;
+}
+.preview {
+    background: transparent url("../images/class.png") no-repeat scroll 0 -618px;
+    display: inline-block;
+    float: left;
+    height: 24px;
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 30px;
+}
+.preview:hover {
+    cursor: pointer;
+}
+.property {
+    left: 10px;
+    line-height: 24px;
+    position: absolute;
+}
+.property span {
+    display: inline-block;
+    float: left;
+    height: 24px;
+    margin-left: 0;
+    margin-top: 2px;
+    width: 24px;
+}
+.createTime {
+    display: none;
+}
+span.activeImage {
+    background: rgba(0, 0, 0, 0) url("/images/icons/discount40.png") no-repeat scroll 0 0;
+    height: 40px;
+    left: 122px;
+    position: absolute;
+    right: auto;
+    top: 3px;
+    width: 40px;
+    z-index: 10;
+}

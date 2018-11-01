@@ -1,0 +1,104 @@
+@CHARSET "UTF-8";
+.limit{
+    font-size: 13px;
+    width: 98%;margin: 0 auto;margin-bottom: 10px;}
+.control-group {
+    display: inline-block;
+    margin-left: 12px;
+}
+.hasDatepicker {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    height: 28px;
+    padding-left: 12px;
+    width: 100px;
+}
+.level input[type="text"] {
+    border-radius: 4px;
+    height: 30px;
+}
+.orderbox select,.orderbox input{
+       border: 1px solid #eee;
+    border-radius: 3px;
+    height: 28px;
+    padding-left: 12px;    
+}
+.orderbox input{
+    border-radius: 3px 0 0 3px;
+}
+
+#keys{height: 28px;width: 160px;padding-left: 12px;}
+#searchbtn{ 
+    border: 1px solid #eee;
+    border-radius: 0 3px 3px 0;
+    height: 28px;
+    vertical-align: middle;
+    font-size: 13px;
+    padding: 0 5px;}
+#tabs{
+    margin: 10px auto;
+    width: 98%;
+}
+#tab_btn_box{
+    margin: 0;
+    padding: 0;
+    height: 33px;
+    background: #e9e9e9;
+}
+#tab_btn{
+    background: none;
+    border: none;
+    float: right;
+    margin: 1px 0 0 0;
+    padding: 0;
+    margin-right: 20%;
+}
+#tab_btn li{
+    margin: 0 2px; 
+}
+#downloadList table{
+    font-size: 13px;
+    margin: 10px auto;
+    width: 98%;
+}
+#downloadList table tr td{
+    height: 30px;
+    line-height: 30px;
+}
+#downloadList table a{
+    color: #317082;
+    font-size: 13px;
+}
+#downloadList table a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#downloadList table tr:nth-child(1)
+{
+background:#f6f6f6;
+}
+
+
+/*我的账务*/
+
+#AccountList table{
+    font-size: 13px;
+    margin: 10px auto;
+    width: 98%;
+}
+#AccountList table tr td{
+    height: 30px;
+    line-height: 30px;
+}
+#AccountList table a{
+    color: #317082;
+    font-size: 13px;
+}
+#AccountList table a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#AccountList table tr:nth-child(1)
+{
+background:#f6f6f6;
+}

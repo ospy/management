@@ -1,0 +1,28 @@
+.main {
+    margin:10px auto;
+    width:1200px;
+    height: auto;
+    overflow: hidden;
+    background:#fff;
+    color:#2e2e2e;
+}
+.navibar{
+	text-indent: 1em;
+    margin: 0 auto;
+	height: 30px;
+	line-height: 30px;
+	width: 1200px;
+	
+}
+.alert-tips {
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 50%;
+    left: 50%;
+    margin: 0 0 -20px -80px;
+    padding: 6px;
+    position: fixed;
+    z-index: 999;
+    border:3px solid #eee;
+    border-radius:6px;
+}

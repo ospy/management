@@ -1,0 +1,413 @@
+﻿.main {
+    width:1200px;
+    margin:0 auto;
+    height:auto;
+    overflow:hidden;
+    
+}
+        .input {
+            font-size: 12px;
+            height: 24px;
+        }
+
+        .SelectTextbox {
+            display: inline-block;
+            width: 160px;
+            background-color: #FFFFFF;
+            border: 1px solid #C9C9C9;
+            /*box-shadow: 0 2px 5px #F5F5F5 inset;*/
+            height: 19px;
+            line-height: 19px;
+        }
+
+
+        .list li {
+            line-height: 20px;
+        }
+
+        .dept {
+            color: red;
+        }
+
+        .info_list li ul li {
+            width: 600px;
+            line-height: 60px;
+        }
+
+        .info_list li {
+            height:32px;
+            margin-top: 10px;
+        }
+
+        .CheckBoxTitle li {
+            display: inline-block;
+            float: left;
+            text-align: left;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            color: #999999;
+        }
+
+        .CheckBoxTitle li {
+            background: #f6f6f6;
+            text-align: center;
+        }
+
+        .CheckBoxContent {
+            height: auto;
+            height: 100%;
+        }
+
+            .CheckBoxContent li {
+                float: left;
+                text-align: left;
+                height: 30px;
+                line-height: 30px;
+            }
+#myTabContent {
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+input[type="radio"],input[type="checkbox"] {
+    margin-top:-2px;
+}
+.longtext input[type="radio"],.longtext input[type="checkbox"] {
+    margin-top:0;
+    margin-right:10px;
+    float:left;
+}
+/*左侧*/
+.topinfo h3{
+    line-height:30px;
+}
+.pic {
+    margin-top: 10px;
+    overflow: hidden;
+    width: 260px;
+    border: 1px solid #eaeaea;
+    display: table-cell;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+#selectImg {
+   padding-top:10px;
+    margin-left:48px;
+    width:200px;
+}
+#selectImg:hover {
+    cursor:pointer;
+}
+.info_left {
+    float:left;
+}
+.info_left img {
+    width:260px;
+    height:260px;
+    display: table-cell;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    }
+
+.upload {
+    height:30px;
+    margin-top: 20px;
+}
+
+#imageUpLoad {
+    width:160px;
+}
+
+/*右侧*/
+
+
+.info_list {
+    float: left;
+    width: 760px;
+    margin-left:40px;
+}
+ul.info_list ul li{
+    height:40px;
+    line-height:40px;
+    margin-top:10px;
+}
+ul.info_list ul li .name{
+    display:inline-block;
+   width:80px;
+   text-align:right;
+}
+ li.col1, li.col2 {
+     float:left;
+    width:50%;
+}
+.info_list ul li input[type="button"]{
+    margin-left:6px;
+}
+.download {
+    border-top:1px dashed #eee;
+    height:110px;
+}
+.btnDownFile {
+   
+    width:225px;
+    height:35px;
+    background: url("/images/button.png") no-repeat scroll 0 0;
+    border: none;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    font-weight: bold;
+    margin-top:60px;
+}
+.btnDownFile:hover {
+    cursor:pointer;
+    background: rgba(0, 0, 0, 0) url("/images/button.png") no-repeat scroll 0 -35px;
+}
+/*详情页内容*/
+.u_contents {
+    margin-top:20px;
+}
+.m_l_row {
+    margin: 5px auto;
+}
+.m_l_r_text {
+    line-height: 22px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px 22px;
+    
+   
+}
+.m_l_r_text textarea{
+    width:96%;
+    min-height:120px;
+    overflow:hidden;
+    padding:10px 24px;
+    overflow-y:visible;
+}
+.m_l_r_text pre {
+    text-align:left;
+    }
+.m_l_r_top {
+    background-color: #f3f3f3;
+    height: 30px;
+}
+.m_l_r_top h3 {
+    margin:0;
+    background: #f3f3f3 url("/images/icons/arrow.png") no-repeat scroll 5px 7px;
+    color: #333;
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 22px;
+}
+.detail {
+    display: block;
+    float: right;
+    margin: 10px;
+    width: 11px;
+}
+.m_l_r_top img {
+    float: right;
+}
+.manageUL li {
+    display: block;
+    float: left;
+    padding: 0 8px;
+}
+.tips {
+    background: rgba(0, 0, 0, 0) url("/images/icons/onFocus.gif") no-repeat scroll 0 4px;
+    border-top: 1px dashed #eee;
+    color: #999;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 24px;
+}
+.helplink {
+    background: rgba(0, 0, 0, 0) url("/images/icons/wenhao.png") no-repeat scroll 0 -2px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.m_l_r_text p {
+    height:30px;
+    line-height:30px;
+}
+.m_l_r_text ul li {
+    height:30px;
+    line-height:30px;
+}
+.m_l_r_text ul.cols{
+    height:auto;
+    overflow:hidden;
+    margin: 5px 0;
+}
+.m_l_r_text .cols li{
+     margin: 5px 0;
+}
+.m_l_r_text .cols .col2 {
+    display:inline-block;
+    float:left;
+    width:42%;
+}
+.m_l_r_text .cols .col3 {
+    
+    display:inline-block;
+    float:left;
+    width:33%;
+}
+.m_l_r_text .cols .col3 .title{
+    display:inline-block;
+    width:80px;
+    text-align:right;
+}
+pre {
+white-space: pre-wrap; /* css-3 */ 
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ 
+white-space: -pre-wrap; /* Opera 4-6 */ 
+white-space: -o-pre-wrap; /* Opera 7 */ 
+
+
+}
+.m_l_r_text .input {
+            
+            width: 220px;
+
+        }
+.PublishInfo {
+    background:#eee;
+}
+
+
+/*弹窗样式*/
+.confirmcenter {
+    height:auto;
+    overflow:hidden;
+}
+.confirmcenter .area {
+    width:100%;
+    }
+.confirmcenter h3 {
+    float:left;
+    font-size:16px;
+    text-align:right;
+    width: 40px;
+    }
+.spec {
+    float:left;
+    width:520px;
+    height:auto;
+    overflow:hidden;
+}
+
+.spec li a{
+    font-size:14px;
+}
+.btn-spec {
+    margin-left:4px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding:0 5px;
+    height:32px;
+    line-height:30px;
+    background:#fff;
+}
+.btn-spec:hover {
+    cursor:pointer;
+    border:1px solid #999;
+    }
+.info_list input[type="text"]{
+            text-indent:0.5em;
+            width: 360px;
+            padding:0;
+            height: 30px;
+            line-height:30px;
+            border:1px solid #ccc;
+            background:#fff;
+            color:#333;
+
+        }
+input[type="button"],input[type="file"],input[type="submit"]:hover{
+    cursor:pointer;
+
+        }
+ .SelectTextbox {
+            display: inline-block;
+            width: 160px;
+            background-color: #FFFFFF;
+            border: 1px solid #C9C9C9;
+            /*box-shadow: 0 2px 5px #F5F5F5 inset;*/
+            height: 19px;
+            line-height: 19px;
+        }
+
+.spec li {
+            float: left;
+            margin-left: 8px;
+            line-height:22px;
+        }
+
+.list li {
+            line-height: 20px;
+        }
+
+.dept {
+            color: red;
+        }
+
+.info_list li ul li {
+    padding-top:5px;
+            width: 680px;
+            height: 30px;
+            line-height:40px;
+            display:inline-block;
+        }
+
+input.booksearch[type="button"] {
+    text-align:right;
+    height:24px;
+    line-height:24px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding-left:26px;
+    padding-right:5px;
+    width:74px;
+}
+input.booksearch[type="button"]:hover {
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input.dd_net[type="button"] {
+    background: url("/images/icons/class.png") no-repeat scroll 3px -442px;
+}
+input.jd_net[type="button"] {
+    background:  url("/images/icons/class.png") no-repeat scroll 3px -464px;
+}
+input.ymx_net[type="button"] {
+    background:  url("/images/icons/class.png") no-repeat scroll 3px -488px;
+}
+.submit {
+    margin-top: 20px;
+    text-align:center;
+}
+.submit .submit_btn {
+    background: #ff811d none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    height: 36px;
+    line-height: 30px;
+    width: 260px;
+}
+.submit .submit_btn:hover {
+    background: #ffa000 none repeat scroll 0 0;
+    color: #eee;
+    cursor: pointer;
+}

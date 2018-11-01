@@ -1,0 +1,548 @@
+
+.main {
+    width:1200px;
+    margin:0 auto;
+    height:auto;
+    overflow:hidden;
+    border:1px solid #eee;
+}
+.col_left {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    width: 298px;
+}
+.col_right{
+      border-left: 1px solid #eee;
+    float: left;
+    height: auto;
+    overflow: hidden;
+    padding: 10px;
+    width: 900px;
+}
+.ranking_list {
+    margin:0;
+    padding:0;
+}
+
+.ranking_list h3 {
+    background: #f0f0f0 url("/Css/images/icons/index.png") no-repeat scroll 6px -85px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 24px;
+    text-align: left;
+    margin:0;
+}
+.ranking_list li .more {
+    background: rgba(0, 0, 0, 0) url("/Css/images/icons/index.png") no-repeat scroll 0 -380px;
+    float: right;
+    height: 34px;
+    line-height: 34px;
+    width: 50px;
+}
+.ranking_list li ul li {
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #f0e4e4;
+    line-height: 18px;
+    padding: 15px 0;
+    vertical-align: middle;
+}
+.ranking_list li ul li .img {
+    border: 1px solid #d1d1d1;
+    float: left;
+    height: 56px;
+    margin-right: 5px;
+    overflow: hidden;
+    width: 56px;
+}
+.ranking_list li ul li .price {
+    color: #333333;
+    line-height: 12px;
+    margin-top: 3px;
+}
+.ranking_list li ul li .price img {
+    vertical-align: text-top;
+}
+.ranking_list li ul li .img img {
+    display: block;
+    height: 56px;
+    width: 56px;
+}
+
+/*限定条件*/
+.limit_info {
+    
+    text-indent:0;
+    display:inline-block;
+     height: 22px;
+    line-height: 22px;
+    border:1px dashed #587069; 
+    padding:0 10px;
+    
+}
+.limit_info  .crumbDelete {
+    display:inline-block;
+    height: 8px;
+    width: 7px;
+    margin-left:3px;
+    background:url(/Css/images/icons/limits.png) no-repeat;
+    background-position: -20px 0;
+}
+.limit {  
+	width: 100%;
+    height:auto;
+    border:1px solid #eee;     
+}
+.limit .top{  
+	text-align: left;
+    vertical-align: middle;   
+    padding: 0;
+}
+.limit tr td{  
+     word-break:keep-all; /* for ie */  
+    white-space:nowrap; /* for chrome */  
+}
+.limit .date_control td{
+	line-height: 40px;
+} 
+.level {
+	padding:3px 6px ;
+    border-bottom:1px dashed #eee;
+    height:auto;
+    overflow: hidden;
+}
+tr.classlist {
+	padding: 10px;
+}
+.select_txt{
+    margin: 0;
+    border: 1px solid #eee;
+    border-radius: 3px 0 0 3px;
+    height: 26px;
+    padding-left: 12px;
+    width: 160px;
+}
+#spe_btn{
+    border-radius: 0 3px 3px 0;
+    margin-top: -1px;
+}
+.rm_search{
+    padding: 5px 0;
+}
+.rm_search .searchbox{
+    margin: 0;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    height: 28px;
+    padding-left: 12px;
+    width: 160px;
+}
+.rm_search .searchbtn{
+    margin-left: 0;
+     height: 28px;
+    width: 40px;
+}
+.releasetime {
+    border:none;
+    clear: both;
+}
+.scitem{
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 1px dashed #ddd;
+    width: 98%;
+}
+.spec {
+    float: left;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+}
+.spec li{
+    display: inline-block;
+}
+.spec li a {
+    font-size: 14px;
+}
+
+.Spec_show{
+	
+	height: auto;
+	overflow: hidden;
+	 
+	
+}
+.Spec_show ul li{ 
+	display: inline-block;
+   float: left;
+   margin-left: 12px;
+   line-height: 30px;
+}
+.Spec_show ul li a{ 
+	font:normal 13px/30px 'Microsoft YaHei';
+}
+
+.more {
+    float:right;
+    font:normal 12px/30px "宋体"; 
+}
+.more:hover{
+    color:#165c47;
+    cursor:pointer;
+}
+.gray {
+    background:#f6f6f6;
+    border-radius:3px;
+}
+
+
+.more-arrow{
+    background:url("/Css/images/icons/arrows.png") no-repeat;
+    background-position: -2px -66px;
+    display: inline-block;
+    height: 5px;
+    line-height: 5px;
+    overflow: hidden;
+    right: 10px;
+    top: 11px;
+    width: 9px;
+}
+.less-arrow {
+    background:url("/Css/images/icons/arrows.png") no-repeat;
+    background-position: -2px -72px;
+    display: inline-block;
+    height: 5px;
+    line-height: 5px;
+    overflow: hidden;
+    right: 10px;
+    top: 11px;
+    width: 9px;
+}
+
+.hidebox {
+	
+    display: none;
+    left: -1px;
+    text-align: center;
+    top: 87px;
+    background: #fff;
+    z-index: 9999;
+}
+.Spec_extra{
+	border-bottom:1px dashed #eee; 
+	height: auto;
+	overflow: hidden;
+}
+.Spec_extra .item{
+	display: block;
+}
+.control-group{
+   display: inline-block;
+   margin-left: 12px;
+}
+.hasDatepicker{
+	border-radius:3px;
+    border: 1px solid #eee;
+    height: 28px;
+   padding-left: 12px;
+    width: 100px;
+}
+.level input[type="text"]{
+    height:30px;
+    border-radius:4px;
+}
+.select a{
+    height:20px;
+    color:#fff;
+    background:#165c47;
+    padding:0 3px;
+}
+/*列表内容*/
+/*.part {float:right;margin-right:20px; height:30px;
+}
+.part a{ margin-right:20px; display:block; float:right; width:43px; height:30px;}
+.part .small{ background:url(/Css/images/icons/bg04.png) 0 8px no-repeat;}
+.part .small:hover{ background:url(/Css/images/icons/bg06.png) 0 8px no-repeat;}
+.part .big{ background:url(/Css/images/icons/bg07.png) 0 8px no-repeat; }
+.part .big:hover{ background:url(/Css/images/icons/bg05.png) 0 8px no-repeat; }
+*/
+
+.orderbox {
+    height:30px;
+    line-height:30px;
+    background:#eee;
+}
+.order{
+    vertical-align: text-top;
+	display: inline-block;
+	width: 14px;
+	height: 16px;
+	background: url(/Css/images/icons/updown.png) no-repeat;
+}
+.down_arrow{
+	background-position: 0 -15px;
+}
+.up_arrow{
+	background-position: -12px -15px;
+}
+.down_arrow_actived{
+	background-position: 0 0;
+}
+.up_arrow_actived{
+	background-position: -12px 0;
+}
+.ordercontrol{
+	display: block;
+	margin-right:40px;
+	float: right;
+	line-height: 30px;
+}
+.listcontent {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+.price {
+    font-size:14px;
+    line-height:22px;
+    text-align:left;
+    color:#f40;
+    font-weight:bold;
+}
+#discuList {
+    height:auto;
+    overflow:hidden;
+}
+.right ul.secondclass li a.spec{
+    background:#165c47;
+    color:#fff;
+}
+.right ul.secondclass li a.spec:hover{
+    color:#fff;
+}
+.red {
+    color:red;
+}
+.no_record {
+    background: url("/Css/images/icons/tishi.png") no-repeat scroll 40px 22px;
+    line-height: 30px;
+    padding: 20px 80px;
+}
+/*列表页内容*/
+.listtable {
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    clear: both;
+    color: #666;
+    padding: 20px 10px;
+    position: relative;
+    width:98%;
+}
+.part .small{ background:url(/Css/images/icons/bg06.png) 0 8px no-repeat; }
+
+.listtable p {
+    
+    overflow-wrap: break-word;
+    word-break: break-all;
+    line-height:22px;
+}
+.listtable::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.listtable .firsttd {
+    line-height: 30px;
+   
+    margin-top: -5px;
+    overflow: hidden;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size:14px;
+}
+.listtable .datail {
+    display:none;
+    padding: 10px 0;
+}
+.listtable .others .subtitle{
+    display:inline-block;  
+}
+.listtable .star {
+    color: #666666;
+}
+.listtable .starpic {
+    display: inline-block;
+}
+.listtable .starpic img {
+    vertical-align: text-bottom;
+}
+.listtable .Secondtd {
+    padding: 10px;
+}
+.listtable .lasttd {
+    padding-bottom: 5px;
+}
+.listtable .firsttd .title {
+    float: left;
+    font: bold 15px/24px "微软雅黑";
+}
+.listtime {
+    float: left;
+    line-height: 28px;
+    margin-left: 5px;
+}
+.abstract {
+    line-height: 20px;
+}
+.highlight {
+    color: #cc3300;
+}
+.pic {
+    background: rgba(0, 0, 0, 0) url("/Images/icons/loading.gif") no-repeat scroll center center;
+    border: 1px solid #dfdede;
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+    text-decoration: none;
+    width: 60px;
+}
+
+.preview {
+    background: transparent url("../Css/images/icons/class.png") no-repeat scroll 0 -618px;
+    display: inline-block;
+    float: left;
+    height: 24px;
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 30px;
+}
+.preview:hover {
+    cursor: pointer;
+}
+.property {
+    left: 10px;
+    line-height: 24px;
+    position: absolute;
+}
+.property span {
+    display: inline-block;
+    float: left;
+    height: 24px;
+    margin-left: 0;
+    margin-top: 2px;
+    width: 24px;
+}
+.createTime {
+    
+}
+span.activeImage {
+    background: rgba(0, 0, 0, 0) url("/Css/images/icons/discount40.png") no-repeat scroll 0 0;
+    height: 40px;
+    left: 122px;
+    position: absolute;
+    right: auto;
+    top: 3px;
+    width: 40px;
+    z-index: 10;
+}
+
+.Pager {
+    width:940px;
+    text-align:center;
+}
+
+#Pager input {
+    margin-top:-1px;
+    text-indent:0;
+    padding:0 3px;
+    text-align:center;
+    border:2px solid #f0f0f0;
+    box-shadow:none;
+}
+.scitem{
+    margin: 10px 0;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    }
+.scitem h2{
+    font-size: 14px;
+    display: inline-block;
+    width: 40px;
+    float: left;
+    
+}
+.spec {
+    margin: 0;
+    float:left;
+    width:480px;
+    height:auto;
+    overflow:hidden;
+}
+
+.spec li a{
+    font-size:14px;
+}
+.btn-spec {
+    margin-left:4px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding:0 5px;
+    height:32px;
+    line-height:30px;
+    background:#fff;
+}
+.btn-spec:hover {
+    cursor:pointer;
+    border:1px solid #999;
+    }
+.info_list input[type="text"]{
+            text-indent:0.5em;
+            width: 360px;
+            padding:0;
+            height: 30px;
+            line-height:30px;
+            border:1px solid #ccc;
+            background:#fff;
+            color:#333;
+
+        }
+input[type="button"],input[type="file"],input[type="submit"]:hover{
+    cursor:pointer;
+
+        }
+ .SelectTextbox {
+            display: inline-block;
+            width: 160px;
+            background-color: #FFFFFF;
+            border: 1px solid #C9C9C9;
+            /*box-shadow: 0 2px 5px #F5F5F5 inset;*/
+            height: 19px;
+            line-height: 19px;
+        }
+
+.spec li {
+            float: left;
+            margin-left: 8px;
+            line-height:30px;
+        }
+
+.list li {
+            line-height: 20px;
+        }
+
+.dept {
+            color: red;
+        }
+.oper{
+    float: right;
+}

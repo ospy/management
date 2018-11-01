@@ -1,0 +1,42 @@
+.onShow
+{
+    background:url(/images/icons/onShow.gif) no-repeat; 
+    padding-left:25px; 
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+}
+.onFocus
+{
+    background:url(/images/icons/onFocus.gif) no-repeat; 
+    padding-left:25px; 
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+}
+.onError
+{
+    background:url(/images/icons/onError.gif) 0 -4px no-repeat;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+    margin-left:12px;
+}
+.onCorrect
+{
+    background:url(/images/icons/onCorrect.gif) 0 -4px no-repeat;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+    margin-left:12px;
+}
+.onLoad
+{
+    background:url(/images/icons/onLoad.gif) no-repeat 3px 3px;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+} 

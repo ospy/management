@@ -1,0 +1,218 @@
+.main{
+	
+	height: auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.login_content{
+	margin: 0 auto;
+    padding: 10px;
+    width: 1000px;
+}
+.left {
+    float:left;
+    width: 340px;
+    margin-left:40px;
+}
+.left h2{
+    margin-top:20px;
+    line-height:40px;
+}
+.left ul{
+    margin-left:20px;
+}
+.left ul li{
+    list-style:square;
+    font:normal 14px/30px 'Microsoft YaHei';
+}
+.right{
+	float:right;
+	
+}
+.login_box{
+	float: right;
+	margin: 0 auto;
+	width: 460px;
+	border-radius: 6px;
+	background: #f6f6f6;
+	border: 1px solid #999999;
+}
+.login_box h2{
+	margin: 0 5px;
+	padding: 3px;
+	font-size: 22px;
+	line-height:40px;
+	border-bottom: 1px solid #666;
+	text-indent: 1em;
+}
+
+.login-form {
+  margin: 20px auto;
+  padding: 10px;
+  width:420px;
+}
+.login-form .fieldset {
+  position: relative;
+  margin: 1.4em 0;
+}
+.login-form .fieldset:first-child {
+  margin-top: 0;
+}
+.login-form .fieldset:last-child {
+  margin-bottom: 0;
+}
+.login-form .fieldset .title {
+	text-align: right;
+	display: inline-block;
+	width: 60px;
+	font:normal 14px/30px "Microsoft YaHei"; 
+	font-weight: bold;
+}
+.login-form label {
+  font-size: 16px;
+  font-size: 0.875rem;
+}
+.login-form label.image-replace {
+  /* replace text with an icon */
+  display: inline-block;
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+  text-shadow: none;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.login-form label.cd-username {
+  background-image: url("../Images/logoes/cd-icon-username.svg");
+}
+.login-form label.cd-email {
+  background-image: url("../Images/logoes/cd-icon-email.svg");
+}
+.login-form label.cd-password {
+  background-image: url("../Images/logoes/cd-icon-password.svg");
+}
+.login-form input {
+  margin: 0;
+  padding: 0;
+  border-radius: 0.25em;
+}
+.login-form input.full-width {
+  width: 75%;
+}
+.login-form input.full-width2 {
+  width: 100%;
+}
+.login-form input.has-padding {
+  padding: 12px 20px 12px 50px;
+}
+.login-form input.has-border {
+  border: 1px solid #d2d8d8;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.login-form input.has-border:focus {
+  border-color: #343642;
+  box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
+  outline: none;
+}
+.login-form input.has-error {
+  border: 1px solid #d76666;
+}
+.login-form input[type=password] {
+  /* space left for the HIDE button */
+  padding-right: 65px;
+}
+#txt_ValidateCode{
+	border: none;
+	box-shadow: none;
+	-moz-appearance: none;
+    border: 1px solid #d2d8d8;
+    line-height: 30px;
+    height:40px;
+    text-indent: 1em;
+}
+#validimg{
+    height: 40px;
+}
+.login-form input[type=button] {
+  padding: 16px 0;
+  cursor: pointer;
+  background: #2f889a;
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.no-touch .login-form input[type=submit]:hover, .no-touch .login-form input[type=submit]:focus {
+  background: #3599ae;
+  outline: none;
+}
+  #loginbtn{
+  
+  	margin-left: 64px;
+  }
+  .login-form .fieldset {
+    margin: 0;
+  }
+  .login-form .fieldset:first-child {
+    margin-top: 0;
+  }
+  .login-form .fieldset:last-child {
+    margin-bottom: 0;
+  }
+  .login-form input.has-padding {
+    padding: 11px 20px 11px 50px;
+  }
+  .remember{
+  	vertical-align: sub;
+  	line-height: 20px;
+  }
+#remember-me{
+  	margin-left: 62px;
+  }
+  .login-form input[type=button] {
+    padding: 11px 0;
+  }
+.login-form .tip{
+	height: 36px;
+	line-height: 36px;
+	margin:0 0 0 80px;
+	padding-left: 24px;
+}
+.onError
+{
+    background:url(/Images/logoes/onError.gif) 0 6px no-repeat;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+    margin-left:12px;
+}
+.onCorrect
+{
+    background:url(/Images/logoes/onCorrect.gif) 0 6px no-repeat;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+    margin-left:12px;
+}
